@@ -53,12 +53,12 @@ cout<<"Make global fit of asimov data"<<endl;
 for(int mui=0;mui<7;mui++){//looping over different signal strength
 
 
-//test statistic histogram distribution from toy s+b data
+//test statistic histogram distribution from toy s+b only data
 TH1F *t1 =new TH1F("t1","t1",330,-30,40);
 t1->SetLineColor(2);
 t1->SetLineWidth(2);
 
-//test statistic histogram distribution from toy b data
+//test statistic histogram distribution from toy b only data
 TH1F *t2 =new TH1F("t2","t2",330,-30,40);
 t2->SetLineColor(4);
 t2->SetLineWidth(2);
@@ -70,8 +70,8 @@ for(int i=0;i<100000;i++){
 nsb=r.Poisson(Ntoy);
 nb=r.Poisson(b);
 
-t1->Fill(qmu(mu[mui],s,b,nsb,nobs));
-t2->Fill(qmu(mu[mui],s,b,nb,nobs));
+t1->Fill(qmu(1,s,b,nsb,nobs));
+t2->Fill(qmu(1,s,b,nb,nobs));
 
 
 
