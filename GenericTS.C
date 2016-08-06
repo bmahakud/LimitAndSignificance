@@ -98,7 +98,7 @@ nb=r.Poisson(b);
 
 // Poisson(Double_t x, Double_t par)
 t1->Fill(qmu(mu[mui],s,b,nsb,nobs)); // WE GENERATE PESUDO DATASET FOR (mu*S)+B (WITH THE VALUE OF mu TO BE TESTED) ALWAYS FOR BOTH S+B and B ONLY HYPOTHESIS
-t2->Fill(qmu(0.,s,b,nsb,nobs));      // WE GENERATE PESUDO DATASET FOR (mu*S)+B (WITH THE VALUE OF mu TO BE TESTED) ALWAYS FOR BOTH S+B and B ONLY HYPOTHESIS
+t2->Fill(qmu(mu[mui],s,b,nb,nobs));      // WE GENERATE PESUDO DATASET FOR (mu*S)+B (WITH THE VALUE OF mu TO BE TESTED) ALWAYS FOR BOTH S+B and B ONLY HYPOTHESIS
 
 // MY LINES
 // nsb=r.Poisson(nobs);
