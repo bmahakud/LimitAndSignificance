@@ -60,7 +60,7 @@ int nb=0; //random variable for toy generation assuming bkg
 // int Ntoy=s+b;//s+b rate
 
 ///////////////////
-cout<<"Make global fit of asimov data"<<endl;
+//cout<<"Make global fit of asimov data"<<endl;
 
 
 // TF1 *f1 = new TF1("f1","( Exp((-1)*x)*Power(x,n))/Factorial(n)",0,10); // n ==> Int, x ===> Double
